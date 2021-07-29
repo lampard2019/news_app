@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_toRightOf="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#101010"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="News headline title"
+        />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_toRightOf="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_title"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#282828"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="News description"
+        />
+
+    <TextView
+        android:id="@+id/item_timestamp"
+        android:layout_toRightOf="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_description"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#C8C8C8"
+        tools:text="News description"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        />
+
+</RelativeLayout>

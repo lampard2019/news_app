@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="str_no_data">Empty data</string>
+</resources>
